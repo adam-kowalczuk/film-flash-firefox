@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Film Flash",
+  "description": "Generates a random movie background, title, and description when user opens a new browser tab.",
+  "version": "1.0.0",
+  "author": "Adam Kowalczuk",
+  "action": {
+    "default_icon": { "16": "icon16.png", "32": "icon32.png" },
+    "default_title": "Movies! Movies! Movies!"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "chrome_url_overrides": { "newtab": "newtab.html" },
+  "permissions": ["activeTab"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "film-flash@browser-extension",
+      "strict_min_version": "91.0"
+    }
+  }
+}

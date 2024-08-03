@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="icon32.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="api.js" defer></script>
+    <script src="trailer.js" defer></script>
+    <title>New Tab</title>
+  </head>
+  <body>
+    <main>
+      <article>
+        <div class="title">
+          <h1 id="title"></h1>
+          <div class="icons">
+            <a href="#" title="More Info" id="info" target="_blank"
+              ><i class="fa-solid fa-circle-info"></i
+            ></a>
+            <a href="#" title="Trailer" id="trailer-link"
+              ><i class="fa-solid fa-film"></i
+            ></a>
+            <a href="#" title="Showtimes" id="showtimes" target="_blank"
+              ><i class="fa-solid fa-ticket"></i
+            ></a>
+          </div>
+        </div>
+        <p id="description"></p>
+        <!-- Link to open the modal -->
+      </article>
+      <a
+        href="https://www.themoviedb.org"
+        title="This product uses the TMDB API but is not endorsed or certified by TMDB."
+      >
+        <img id="logo" src="tmdb-logo.svg" alt="The Movie Database Logo" />
+      </a>
+      <!-- The modal -->
+      <div id="trailer-modal">
+        <div id="trailer-content">
+          <span class="close">&times;</span>
+          <div id="youtube-video-container"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
